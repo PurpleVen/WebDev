@@ -1,75 +1,142 @@
-<!--Old DTML code-->
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"content="IE=edge">
-    <meta name  ="viewport" content ="width=device-width, initial-scale=1.0">
-    <title>Sample html file</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="about">
-    <!--Block Element and inline Element-->
+<div class="d-flex">
+    <!-- Navigation tab  -->
+    <nav id="navigation">
+        <div class="sidebar">
+            <h2>
+                <p class="subheading">Company</p>
+                <p class="subheading">Name</p>
+            </h2>
 
-    <!-- <h2 style ="background-color: blueviolet">Header</h2>-->
-    <h2 class="heading-2" id="demo">Vendra</h2>
-    <p>My name is S.Vendra. I'm currently doing my Second year in Information Technology at Don Bosco Institute Of Technology.</p>
-    <br>
-    <p><em>Java, C, C++, SQL were some fundamental languages we studied this sem.</em></p>
-    <br>
-    <p><strong>A mini project based on java, sql was developed by our team this sem.</strong></p>
-    <p><strong>The Web Application created is : Library Management System.</strong></p>
-    <br>
-    <span>Github Link For The Project</span>
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li> <a href="#showcase-section" class = "scroll"> <span class = "fa fa-showcase-section"></span>Showcase</a></li>
+                <li> <a href="#service-section" class = "scroll"> <span class = "fa fa-service-section"></span>Services</a></li>
+                <li> <a href="#designer-section" class = "scroll"> <span class = "fa fa-service-section"></span>Designer</a></li>
+                <li> <a href="#contact-section" class = "scroll"><span class = "fa fa-contact-section"></span>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Navigation tab -->
+
+
+    <div class="page-content">
+        <div class="aligning">
+            <h2 class="main-heading">Interior Design</h2>
+
+            <!-- Showcase -->
+            <section id="showcase-section">
+                <div class="showcase">
+                    <h2 class="heading2">Showcase.</h2>
+                    <div class="underline"></div>
+                    <div class="row-1 m-b-10">
+                        <img src="./assets/Images/atrium.jpg" alt="atrium" class="image1">
+                        <img src="./assets/Images/livingroom2.jpg" alt="bedroom" class="image2">
+                    </div>
+                    <div class="row-2 m-b-10">
+                        <img src="./assets/Images/livingroom.jpg" alt="atrium" class="image1">
+                        <img src="./assets/Images/kitchenconcrete.jpg" alt="bedroom" class="image2">
+                    </div>
+                </div>
+            </section>
+            <!-- End with showcase -->
+
+            <!-- Service -->
+            <section id="service-section">
+                <div class="sevices">
+                    <h2 class="heading2">Services</h2>
+                    <div class="underline"></div>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque in aperiam, expedita repudiandae repellendus tempore reprehenderit placeat magnam id odit a laudantium inventore. Dolore optio inventore impedit illo voluptates blanditiis, nostrum tempore provident placeat natus maiores enim fuga, rem quod architecto consectetur asperiores expedita at facilis earum, nulla voluptatibus</p>
+                </div>
+            </section>
+            <!-- End of Service -->
+
+            <!-- Designers -->
+            <section id="designer-section">
+                <div class="designer1">
+                    <h2 class="heading2">Designers.</h2>
+                    <div class="underline"></div>
+                    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id saepe quam necessitatibus eius minima architecto culpa, eveniet consectetur nulla similique quibusdam at eos recusandae numquam? Fuga, officiis, placeat cupiditate rerum possimus soluta ratione velit suscipit tenetur vero quae quam quis voluptas voluptatum aliquam debitis ab nam, consequatur illo quasi officia</p>
+                </div>
+
+                <p class="team-text">Our Designers:</p>
+
+                <div class="designer-panel">
+                    <div class="designer">
+                        <img src="./assets/Images/team1.jpg" alt="John Doe" class="team-1">
+                        <div class="description">
+                            <p class="name">John Doe</p>
+                            <p class="post">CEO &amp; Founder </p>
+                            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam unde eos dicta facere animi accusantium qui autem rerum cumque.</p>
+                        </div>
+                    </div>
+
+                    <div class="designer">
+                        <img src="./assets/Images/team3.jpg" alt="John Doe" class="team-1">
+                        <div class="description">
+                            <p class="name">John Doe</p>
+                            <p class="post">CEO &amp; Founder </p>
+                            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam unde eos dicta facere animi accusantium qui autem rerum cumque.</p>
+                        </div>
+                    </div>
+
+                    <div class="designer">
+                        <img src="./assets/Images/team2.jpg" alt="John Doe" class="team-1">
+                        <div class="description">
+                            <p class="name">John Doe</p>
+                            <p class="post">CEO &amp; Founder </p>
+                            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam unde eos dicta facere animi accusantium qui autem rerum cumque.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Designers -->
+
+            <!-- Contact -->
+            <section id="contact-section">
+                <div class="contact">
+                    <h2 class="heading2">Contact.</h2>
+                    <div class="underline"></div>
+                    <p>Contact us:</p>
+
+                    <form>
+                        <label>
+                            Name
+                            <input type="text">
+                        </label>
+
+                        <label>
+                            Email
+                            <input type="email">
+                        </label>
+
+                        <label>
+                            Message
+                            <input type="text">
+                        </label>
+
+                        <button class="send-message">Send Message</button>
+                    </form>
+                </div>
+            </section>
+            <!-- End Contact -->
+
+        </div>
+
+        <footer>
+            <p>Designed in Workshop &hearts;</p>
+        </footer>
+    </div>
+
 </div>
-
-<!--link-->
-<p><a href="https://github.com/PurpleVen/LibraryManagementSystem"target="_blank">GitHub:LibraryManagementSystem</a></p>
-<!--- <ol style="list-style-type: upper-roman;">
-     <li>Milk</li>
-     <li>Bread</li>
- </ol>
--->
-<!--<ul class="list">
-    <li class = "item">About us</li>
-    <li class = "item">Services</li>
-    <li class = "item">Contact</li>
-</ul>-->
-<br>
-<div class="container">
-    <h3>What is Library Management System ?</h3>
-    <p class ="para">A Library management system is a software that uses to maintain the record of the library. It helps to maintain a database that is useful to enter new books & record books borrowed by the members, with the respective submission dates. Also a table for the number of present books can be seen with the availment of editing as well as deleting the books.</p>
-</div>
-<!--
-  <dl>
-      <dt>Logic Designing</dt>
-      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque eligendi asperiores recusandae magni voluptas nesciunt ducimus iure, sunt molestias itaque repellat eveniet corrupti accusamus blanditiis eum odio eius earum.</dd>
-  </dl>
--->
-<!--Table-->
-<!-- <table>
-<thead>
-    <th>ID</th>
-    <th>Item</th>
-    <th>Price</th>
-</thead>
-
-<tr>
-    <td>1</td>
-    <td>Milk</td>
-    <td>50</td>
-</tr>
-
-<tfoot>
-    <td></td>
-    <td>Total</td>
-    <td>50</td>
-</tfoot>
-</table>
--->
-<h3>Animation</h3>
-<div class ="animate"></div>
 </body>
 </html>
