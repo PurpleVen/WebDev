@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script> 
+    <title>Angular JS</title>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Angular JS Form</h2>
+    <hr>
+    <br>
+
+    <div class="formmm" style="text-align: center;">
+
+    Enter your Name : 
+
+    <input type = "text" ng-model = "yourName" placeholder = "Name">
+
+    <br>
+    <br>
+
+    Enter your Email ID : 
+
+    <input type = "text" ng-model = "yourEmail" placeholder = "Email ID">
+
+    <br>
+    <br>
+
+    Enter your Phone Number : 
+
+    <input type = "number" ng-model = "yourPhone" placeholder = "Phone No">
+
+    <br>
+    <br>
+
+    Enter your Password : 
+
+    <input type = "password" ng-model = "yourPass" placeholder = "Password">
+
+    <br>
+    <br>
+
+    <p><h3>Hello <span ng-bind="yourName">!!</span>, <br>
+        You entered EmailID as <span ng-bind="yourEmail"></span>, <br> 
+        Your phone number is <span ng-bind="yourPhone"></span></h3></p>
+
+        Agree to terms and conditions:
+
+        <input type = "checkbox" ng-model = "showHide1">Click on the checkbox to submit
+        <br>
+        <br>
+        <button ng-show = "showHide1">Submit</button></br>
+
+        </div>
+
+
+
+
+</body>
+</html>
