@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todos API Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="load-todos">Load Todos</button>
+    <div id="todos"></div>
+
+    <script>
+      $(document).ready(function() {
+        $('#load-todos').click(function() {
+          $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/todos',
+            method: 'GET',
+            success: function(data) {
+              var todos = JSON.parse(data);
+              var html = '<ul>';
+              for (var i = 0; i < todos.length; i++) {
+                html += '<li>' + todos[i].title + '</li>';
+              }
+              html += '</ul>';
+              $('#todos').html(html);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

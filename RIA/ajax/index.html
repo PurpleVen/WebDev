@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Viewer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Using AJAX to change the image in the panel</h1>
+    <hr>
+    <div style="float: left; margin-left:100px ;">
+        
+        <h2>Choose any one of the images to be displayed on the right panel</h2>
+        <table border="5" cellspacing="0">
+        
+        <td><img src="bear (1).png" width="100" height="100" class="thumbnail"></td>
+      <td><img src="bird.png" width="100" height="100" class="thumbnail"></td>
+      <td><img src="hamster.png" width="100" height="100" class="thumbnail"></td>
+    </table>
+    </div>
+    <div style="float: right; margin-right:100px ;">
+        <h2>Right Panel</h2>
+        <table border="5" cellspacing="0">
+      <td><img src="ad19052c955b4e1fd579c021863dd7ad.jpg" width="400" height="400" id="main-image"></td>
+    </table>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $('.thumbnail').click(function() {
+          var imageSrc = $(this).attr('src');
+          $('#main-image').attr('src', imageSrc);
+        });
+      });
+    </script>
+  </body>
+</html>
